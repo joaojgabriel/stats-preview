@@ -1,0 +1,174 @@
+/* Box sizing rules */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+/* Set core root defaults */
+html {
+  font-size: 10px;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+.stat {
+  color: white;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.feature .heading {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.heading {
+  display: block;
+}
+
+em {
+  font-style: normal;
+  color: hsl(277, 64%, 61%);
+}
+
+strong {
+  font-size: 1.5em;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: hsl(233, 47%, 7%);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 78rem;
+  width: 87.2%;
+  background: hsl(244, 38%, 16%);
+  border-radius: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 78.59%;
+  max-width: 40rem;
+  margin: 4.5rem auto 0;
+}
+
+.content > *:nth-child(1) {
+  margin-bottom: 2.8rem;
+}
+
+.content > *:nth-child(2) {
+  margin-bottom: 5.2rem;
+}
+
+.feature {
+  margin-bottom: 3.6rem;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.img-wrapper {
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+.overlay {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: hsla(277, 64%, 61%, 0.5);
+}
+
+img,
+.overlay {
+  border-radius: 10px 10px 0 0;
+}
+
+@media screen and (min-width: 725px) {
+  h1 {
+    font-size: 2.7rem;
+  }
+  p {
+    line-height: 1.5;
+  }
+  .card {
+    flex-direction: row-reverse;
+    min-height: auto;
+    max-width: 111rem;
+  }
+
+  .img-wrapper {
+    height: 100%;
+  }
+
+  img,
+  .overlay {
+    border-radius: 0 10px 10px 0;
+  }
+
+  .content {
+    width: 30rem;
+    max-height: max-content;
+    text-align: left;
+    margin: auto;
+  }
+
+  .features {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-right: 2.8rem;
+  }
+
+  .feature {
+    margin-bottom: 0;
+  }
+
+  .feature:nth-child(2) {
+    margin-left: 2.8rem;
+    margin-right: 2.8rem;
+  }
+}
