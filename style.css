@@ -109,10 +109,6 @@ main {
   position: relative;
 }
 
-img {
-  max-width: 100%;
-}
-
 .overlay {
   display: block;
   width: 100%;
